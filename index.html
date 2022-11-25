@@ -1,0 +1,55 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SvJLiMHV4omBe6NQi7HG98HyTTAXTMzamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;700&family=Smythe&display=swap" rel="stylesheet">
+            <title>Jimmy's Diner</title>
+    </head>
+    <body>
+        <header class="header"></header>
+        <div class="main" id="main"></div>
+        <div class="order" id="order"></div>
+        <div class="modal" id="modal">
+
+            <div class="close-modal">
+                <button class="close-modal-btn" id="close-modal-btn">X</button>
+            </div>
+    
+            <h1 class="modal-title">Enter card details</h1>
+            <form id="place-order">
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter your Name"
+                    id="name"
+                    required
+                >
+                <input
+                    type="number"
+                    name="cardNumber"
+                    placeholder="Enter Card Number"
+                    id="cardNumber"
+                    required
+                >
+                <input
+                    type="number"
+                    name="cardCVV"
+                    placeholder="Enter CVV"
+                    id="cvvNumber"
+                    required
+                >
+                <button class="place-order-btn" id="place-order-btn" type="submit">Pay</button>
+            </form>
+        </div>
+        <div class="order-placed" id="order-placed">
+            <h2 class="order-message" id="order-message">Thanks <span id="full-name">                
+                </span>, your order is on its way</h2>
+        </div>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
